@@ -143,7 +143,7 @@ const List = () => {
                     </RowTable>
                 )
             })}
-            <div ref={observerRef}>Lead</div>
+            <div ref={observerRef}>more</div>
         </TableLayout>
     )
 }
