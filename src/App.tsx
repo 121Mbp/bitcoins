@@ -1,5 +1,4 @@
-import React from 'react';
-import List from './layout/List';
+import List from './components/List'
 
 const App = () => {
   return (
@@ -9,4 +8,4 @@ const App = () => {
   )
 }
 
-export default App;
+export default App
