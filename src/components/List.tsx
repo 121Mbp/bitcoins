@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { ICoins } from '../../utils/Types'
 import { currency } from './Format'
 import PriceChart from './PriceChart'
+import { Loading } from './Loading'
 
 const BASE_URL = `https://api.coinpaprika.com/v1`
 
@@ -115,6 +116,7 @@ const List = () => {
     }, [loading])
 
     return (
+        <>
         <TableLayout>
             <RowTable type='head'>
                 <span>#</span>
@@ -145,6 +147,8 @@ const List = () => {
             })}
             <div ref={observerRef}>more</div>
         </TableLayout>
+        { loading && <Loading /> }
+        </>
     )
 }
 
